@@ -1,0 +1,66 @@
+<!--puredata.html-->
+<html>
+	<head><title>Instalar Pure Data</title></head>
+	<body bgcolor = "#222222">
+		<link rel = "stylesheet" type = "text/css" href = "styles.css">
+		<center>
+			<a href = "main.html"><img src = "Resources/raspberry.png" width = "150" heiht = "150"></a><br><br>
+			<div id = "titulo">Instalar Pure Data</div><br>
+		</center>
+		<div id = "contenido">
+			Para las versiones extendidas-Pd, utilice el repositorio apt.puredata.info. Para añadirlo, ejecute estos comandos en el terminal:<br><br>
+			<div id = "codigo">
+				sudo add-apt-repository "deb http://apt.puredata.info/releases` lsb_release-c | awk '{print $ 2}' `main"<br><br>
+				sudo apt-key adv - keyserver keyserver.ubuntu.com - 9f0fe587374bbe81-recv clave<br><br>
+				sudo apt-key adv - keyserver keyserver.ubuntu.com - D63D3D09C39F5EEB-recv clave<br><br>
+			 	sudo apt-get update<br><br>
+				sudo apt-get install pd-extendida<br><br>
+			</div>
+			<br><br>Ahora también puede encontrar el paquete pd-extendido en sináptica o Ubuntu Software Center.<br><br><br><br>
+			<p  align = "middle">Obtención de Bibliotecas individuales</p><br>
+			También es posible conseguir empaquetados individualmente bibliotecas que se incluyen en los repositorios oficiales, pero construidas para versiones anteriores.Estos paquetes están en el eighthave / LIBDIRS PPA en launchpad.net. Algunos de los paquetes se remontan tan lejos como Ubuntu / kármica 09.10.
+			<br><br><br>
+			<p  align = "middle">Conseguir la Build Beta extendido-Pd</p><br>
+			También puede utilizar un depósito para conseguir las compilaciones anteriores de Pd-extended utilizando la PPA extendido-Pd. Para añadirlo, ejecute estos comandos en el terminal:<br><br>
+			<div id = "codigo">
+				sudo add-apt-repositorio ppa: eighthave / extendidos-pd<br><br>
+				sudo apt-get update<br><br>
+				sudo apt-get install pd-extendida<br><br>
+			</div>
+			<br><br><br>
+			<p  align = "middle">Adición apt.puredata.info manualmente-Pd</p><br>
+			Usted puede agregar esta línea al final de / etc / apt / sources.list O bien, puede añadirla en el programa de administración GUI de Synaptic (enConfiguración -> Repositorios menú, entonces el Software de terceros pestaña). Seleccione la línea para su versión de Debian o Ubuntu entre las siguientes opciones:<br><br>
+			<div id = "codigo">
+				# Debian / antigua estable<br>
+ 				deb http://apt.puredata.info/releases principal antigua estable
+ 				<br><br>
+ 				# Debian / estable<br>
+				deb http://apt.puredata.info/releases principal estable
+ 				<br><br>
+ 				# Debian / testing<br>
+				deb http://apt.puredata.info/releases prueba principal
+				<br><br>
+				# Debian / Sarge<br>
+				deb http://apt.puredata.info/releases principal sarge
+				<br><br>
+				# Debian / etch<br>
+				http://apt.puredata.info/releases deb graban principal
+				<br><br>
+				# Debian / Lenny<br>
+				deb http://apt.puredata.info/releases principal lenny
+				<br><br>
+				# Debian / squeeze<br>
+				http://apt.puredata.info/releases deb apretón principal
+				<br><br>
+				# Debian / sibilante<br>
+				 deb http://apt.puredata.info/releases principal sibilante
+			</div>
+		</div>
+		<!--Botones de navegación-->
+		<p id = "contenido" align = "left">Raspbian</p>
+		<a href = "raspbian.html"><img src = "Resources/previous.png" width = "150" height = "100" align = "left"></a>
+
+		<p id = "contenido" align = "right">Open Sound Control (OSC)</p>
+		<a href = "osc.html"><img src = "Resources/next.png" width = "150" height = "100" align = "right"></a>
+	</body>
+</html>

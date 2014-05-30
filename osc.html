@@ -1,0 +1,61 @@
+<!--osc.html-->
+<html>
+	<head><title>Open Sound Control (OSC)</title></head>
+	<body bgcolor = "#222222">
+		<link rel = "stylesheet" type = "text/css" href = "styles.css">
+		<center>
+			<a href = "main.html"><img src = "Resources/raspberry.png" width = "150" heiht = "150"></a><br><br>
+			<div id = "titulo">Open Sound Control (OSC)</div>
+		</center>
+		<div id = "contenido">
+			Open Sound Control (OSC) es un formato de contenido para los mensajes entre ordenadores, sintetizadores de sonido y otros dispositivos multimedia que están optimizados para la tecnología de red moderna. Llevar los beneficios de la tecnología de red moderna para el mundo de los instrumentos musicales electrónicos, las ventajas de la OSC incluyen la interoperabilidad, la precisión, la flexibilidad y una mayor organización y documentación.<br><br><br>
+
+			<p align="middle">MOTIVACIÓN</p><br>
+			OSC es un formato de contenido desarrollado en CNMAT por Adrian Freed y Matt Wright comparable a XML , WDDX o JSON . Fue pensado originalmente para el intercambio de datos de rendimiento de la música (gestos, parámetros y secuencias de notas) entre los instrumentos musicales (especialmente los instrumentos musicales electrónicos comosintetizadores ), computadoras y otros dispositivos multimedia. OSC se utiliza a menudo como una alternativa para el 1983 MIDI estándar, donde se desea una mayor resolución y un espacio de parámetros musical más rico. Mensajes OSC son transportados comúnmente a través de Internet y dentro de subredes casa y estudio utilizando ( UDP / IP ,Ethernet ). Mensajes OSC entre controladores gestuales se transmiten por lo general más puntos finales de serie de USB por estar envuelto en el SLIP protocolo.
+			OSC ofrece a los músicos y desarrolladores una mayor flexibilidad en los tipos de datos que se pueden enviar a través del cable, lo que permite nuevas aplicaciones que pueden comunicarse entre sí en un nivel alto.
+
+			<p align="middle">CARACTERÍSTICAS</p><br>
+			*De composición abierta, dinámica URL régimen de estilo de nombres simbólicos
+			<br><br>*Simbólico y de alta resolución numérica de datos del argumento
+			<br><br>*La coincidencia de patrones lenguaje para especificar varios destinatarios de un mensaje único
+			<br><br>*De alta resolución de etiquetas de tiempo
+			<br><br>*"Paquetes" de mensajes cuyos efectos deben ocurrir simultáneamente
+			
+			<br><br>Hay docenas de implementaciones de OSC, incluyendo sonido en tiempo real y los entornos de procesamiento de medios de comunicación, herramientas de interactividad web, sintetizadores de software, una gran variedad de lenguajes de programación y dispositivos de hardware. OSC ha alcanzado un amplio uso en campos que incluyen nuevas interfaces basadas en la informática para la expresión musical, la robótica, interfaces de rendimiento de vídeo, en toda la zona y en red, sistemas de música distribuidos de área local, la comunicación entre procesos, e incluso dentro de una sola aplicación.
+			
+			<br><br>El TUIO norma comunitaria para las interfaces tangibles como multitouch está construido en la cima de la OSC. Del mismo modo el sistema GDIF para la representación de gestos integra OSC.
+			
+			<br><br>OSC se utiliza ampliamente en los controladores musicales experimentales y se ha incorporado en varios productos de código abierto y comerciales 
+			
+			<br><br>El lenguaje de programación de música Open Sound Mundial (OSW) está diseñado en torno a la mensajería OSC.
+			
+			<br><br>OSC también se utiliza como el corazón de la DSSI API plug-in, una evolución de la API LADSPA, con el fin de hacer que el eventual GUI interactúa con el núcleo del complemento a través de la mensajería del anfitrión plugin. LADSPA y DSSI son las API dedicadas a los efectos de audio y sintetizadores.
+			
+			<br><br>En 2007, un espacio de nombres estandarizados dentro de OSC llamado SYN , para la comunicación entre los controladores, los sintetizadores y los ejércitos, se propuso.
+			<br><br>
+
+			<p align="middle">MOTIVACIÓN</p><br> 
+			Mensajes OSC consisten en un patrón de direcciones, una cadena de etiquetas Type, Argumentos y una etiqueta de tiempo opcional. Patrones de dirección forman un espacio jerárquico nombre, que recuerda a un Unix sistema de ficheros camino, o una URL . Cadenas de etiqueta de tipo son una representación de cadena compacta de los tipos de argumentos. Los argumentos están representados en forma binaria con la alineación de 4 bytes. Los tipos básicos soportados son:
+
+			<br><br>*32 bits complemento a dos enteros con signo
+
+			<br><br>*De 32 bits en coma flotante IEEE números
+
+			<br><br>*Terminadas en nulo matrices de datos de 8 bits codificados (estilo C cuerdas )
+
+			<br><br>*Tamaño arbitrario blob (por ejemplo, datos de audio, o un cuadro de video)
+
+			<br><br>
+			Aplicaciones comúnmente emplean extensiones a este conjunto básico. Recientemente algunas de estas extensiones como un tipo booleano compacto se integraron en los tipos básicos requeridos de OSC 1.1.
+
+			<br><br>
+			Las ventajas de las OSC sobre MIDI son principalmente la conectividad a Internet, el tipo de datos de resolución; y la relativa facilidad de especificar una ruta simbólica, en oposición a especificar todas las conexiones como números de 7 bits con 7 bits o tipos de datos de 14 bits.
+		</div>
+	<!--Botones de navegación-->
+		<p id = "contenido" align = "left">Instalar Pure Data</p>
+		<a href = "puredata.html"><img src = "Resources/previous.png" width = "150" height = "100" align = "left"></a>
+
+		<p id = "contenido" align = "right">Parches Pure Data</p>
+		<a href = "parches.html"><img src = "Resources/next.png" width = "150" height = "100" align = "right"></a>
+	</body>
+</html>

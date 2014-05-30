@@ -18,3 +18,11 @@ a
 	text-decoration: none;
 	color: #AAAAAA;
 }
+
+#codigo
+{
+	font-family: "Time New Roman";
+	font-style: italic; 
+	font-weight: normal;
+	font-size: 18px;
+}
