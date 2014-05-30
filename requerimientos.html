@@ -1,0 +1,55 @@
+<!--requerimientos.html-->
+<html>
+	<head><title>Requerimientos</title></head>
+	<body bgcolor = "#222222">
+		<link rel = "stylesheet" type = "text/css" href = "styles.css">
+		<center>
+			<img src = "Resources/raspberry.png" width = "150" heiht = "150"><br><br>
+			<div id = "titulo">Requerimientos</div><br>
+		</center>
+		<div id = "contenido">
+			A continuación se muestra una lista con todo el hardware que necesitamos.
+			<ol type = "I">
+				<li>Raspberry Pi</li><br>
+				<img src = "Resources/raspberry_pi.jpg" align = "middle" width = "300" height = "300">
+				<p>
+					Evidentemente necesitamos una Raspberry Pi, esta será la encargada de tener el control total de nuestro proyecto de procesamiento de audio, es decir la razón del proyecto.
+				</p>
+				<li>Cable ethernet</li><br>
+				<img src = "Resources/ethernet.jpg" align = "middle" width = "300" height = "300">
+				<p>
+					El cable ethernet se necesita para crear la comunicación del Raspberry Pi con nuestra computadora. Se necesitará también al momento de "levantar" por primera vez la Raspberry Pi.
+				</p>
+				<li>Cargador</li><br>
+				<img src = "Resources/charger.jpg" align = "middle" width = "300" height = "300">
+				<p>
+					Necesitaremos un cargador que cumpla con las especificaciones eléctricas de la Raspberry Pi.
+				</p>
+				<li>Bocinas</li><br>
+				<img src = "Resources/speakers.jpg" align = "middle" width = "300" height = "300">
+				<p>
+					Necesitaremos un par de bocinas para poder reproducir el sonido que liberé nuestra aplicación, además de que la utilizaremos para ciertas pruebas de audio.
+				</p>
+				<li>Micro SD-Card</li><br>
+				<img src = "Resources/sd_card.jpg" align = "middle" width = "300" height = "300">
+				<p>
+					Necesitaremos una memoria SD ya que será aquí en donde cargaremos el sistema operativo Raspbian que le dará las funciones necesarias a la Raspberry Pi para poder trabajar con ella.
+				</p>
+				<li>Sound Card</li><br>
+				<img src = "Resources/sound_card.jpg" align = "middle" width = "300" height = "300">
+				<p>
+					Necesitaremos una tarjeta de sonido ya que esta nos proporcionará una variante de entrada de audio y otra de salida las cuales serán necesarias al momento de ingresar el audio a procesar (entrada de audio) y una vez procesado dar salida al resultado de las modificaciones de audio que hayamos hecho dentro de Pure Data (salida de audio).
+				</p>
+				<li>Cable 3.5 a 3.5</li><br>
+				<img src = "Resources/cable.jpg" align = "middle" width = "300" height = "300">
+				<p>
+					Necesitaremos un par de cables de 3.5 a 3.5 para crear los puentes de comunicación de audio desde nuestra entrada (puede ser algún instrumento musical o reproductor) hasta la Raspberry Pi y otro para el puente de comunicación de la tarjeta de sonido (salida) hacia las bocinas.
+				</p>
+			</ol>
+			<p>
+				Una vez que tengamos todos los componentes, nuestra Raspberry se debería ver de esta manera:<br><br>
+				<img src = "Resources/raspberry_complete.jpg" align = "middle" width = "400" height = "300">
+			</p>
+		</div>
+	</body>
+</html>
